@@ -158,6 +158,45 @@ header .menu .menu-icon div {
     margin-top: -100px;
 }
 
+.search .title {
+    font-size: 32px;
+    font-weight: 500;
+}
+
+.search .forms {
+    display: flex;
+    margin-top: 32px;
+    gap: 104px;
+}
+
+.search .left-form,
+.search .right-form {
+    flex: 1;
+}
+
+.search input,
+.search select {
+    width: 100%;
+    color: #fff;
+    font-size: 20px;
+    outline: none;
+    background-color: #2b2b2b;
+    border: none;
+    border-radius: 8px;
+    padding: 24px;
+}
+
+.search input {
+    background-image: url('../images/searchIcon.png');
+    background-repeat: no-repeat;
+    background-position: 20px center;
+    padding-left: 64px;
+}
+
+.search select {
+    border-right: 24px solid transparent;
+}
+
 @media (max-width: 824px) {
 
     header nav {
@@ -188,6 +227,19 @@ header .menu .menu-icon div {
 
     .hero .right img {
         height: 300px;
+    }
+
+    .search {
+        padding-bottom: 32px;
+    }
+
+    .search .title {
+        text-align: center;
+    }
+
+    .search .forms {
+        flex-direction: column;
+        gap: 24px;
     }
 }
 
